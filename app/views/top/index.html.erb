@@ -3,60 +3,71 @@
  <head>
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">  
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </head>
 
 <body>
 <div class="header">
-  <nav class="navbar navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">Boulder</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1e90ff;">
+  <a class="navbar-brand" href="#">Boulder</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
- </div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">ログイン <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">新規登録 <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="店名から検索" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
+    </form>
+  </div>
+</nav>
+</div>
+
 <div class="main-container">
-<div class="title">
-<h1>福岡県のボルダリングジム検索サービス<h1>
+  <div class="title">
+  <h1>福岡県のボルダリングジム検索サービス<h1>
+  </div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle btn-success size" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="btnj">地域から探す</span>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">福岡市</a>
+    <a class="dropdown-item" href="#">北九州市</a>
+    <a class="dropdown-item" href="#">久留米市</a>
+    <a class="dropdown-item" href="#">太宰府・宗像</a>
+  </div>
+</div>
+  
+  <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle btn-danger  size" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="btnj">特徴から探す</span>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">駐車場あり</a>
+    <a class="dropdown-item" href="#">駅近</a>
+    <a class="dropdown-item" href="#">広い施設</a>
+    <a class="dropdown-item" href="#">キッズ壁</a>
+    <a class="dropdown-item" href="#">高い壁</a>
+    <a class="dropdown-item" href="#">シャワーあり</a>
+  </div>
 </div>
 
- <div class="btn2">
-<button type="button" class="btn btn-success size">
-<%= link_to "地域から探す", root_path, class: "btnj"%>
-</button>
-<button type="button" class="btn btn-danger size">
-<%= link_to "特徴から探す", root_path, class: "btnj"%>
-</button>
-</div>
 
+
+  
 
 </div>
 <body>
