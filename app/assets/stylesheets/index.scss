@@ -1,0 +1,35 @@
+.main-container{
+  background-image: url("/images/boulder.jpg");
+  height: 800px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.size {
+  border-radius: 70px;
+  margin: 50px;
+  min-width: 300px;
+  min-height: 100px;
+  font-size: 100px;
+}
+
+.btnj{
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  display: block;
+}
+
+.btnj:hover{
+  color: #FFF;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.title{
+  color: #FFF;
+  font-weight: bold;
+}
